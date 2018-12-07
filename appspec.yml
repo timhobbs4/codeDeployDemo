@@ -11,12 +11,12 @@ permissions:
      mode: 755
      type:
        - file
-hooks:
-   BeforeInstall:
-    - location: scripts/installapache.sh
-      runas: ec2-user
-    - location: scripts/startapache.sh
-      runas: ec2-user
-   AfterInstall:
-    - location: scripts/restartapache.sh
-      runas: ec2-user
+#hooks:
+#  BeforeInstall:
+#    - location: scripts/installapache.sh
+#      runas: ec2-user
+#    - location: scripts/startapache.sh
+#      runas: ec2-user
+#   AfterInstall:
+#    - location: scripts/restartapache.sh
+#      runas: ec2-user
